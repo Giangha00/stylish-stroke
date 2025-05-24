@@ -1,0 +1,64 @@
+.calligraphy-container {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .calligraphy-left {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+  }
+  
+  .calligraphy-left h2 {
+    margin-top: 0;
+    font-size: 28px;
+  }
+  
+  .calligraphy-left p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .calligraphy-right {
+    flex: 1;
+    max-height: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    background-color: #fff;
+  }
+  
+  .card-scroll {
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .card {
+    padding: 16px;
+    background-color: #eee;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    background-color: #ddd;
+  }
+  
+  .card.active {
+    background-color: #d4bfff;
+    font-weight: bold;
+    border-left: 4px solid #7c3aed;
+  }
+  
