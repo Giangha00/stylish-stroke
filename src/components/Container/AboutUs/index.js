@@ -29,11 +29,11 @@ const AboutUs = () => {
     },
   ]);
 
-  useEffect(() => {
-    fetch("sqlserver://localhost:1433").then((response) => {
-      console.log("response", response);
-    });
-  });
+  // useEffect(() => {
+  //   fetch("sqlserver://localhost:1433").then((response) => {
+  //     console.log("response", response);
+  //   });
+  // });
 
   return (
     <section id="about" className="about-us">
