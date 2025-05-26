@@ -2,7 +2,7 @@ import "./learningresources.css";
 
 const ResourceCard = ({ icon, title, description, links }) => {
   return (
-    <div className="card">
+    <div className="card-learning">
       <h2 className="card-title">
         <span className="card-icon">{icon}</span> {title}
       </h2>

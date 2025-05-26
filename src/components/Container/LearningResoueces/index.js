@@ -1,14 +1,9 @@
-import "../LearningResoueces/learningresources.css";
+import "./learningresources.css";
 import ResourceCard from "./ResourceCard";
 import { FaChalkboardTeacher, FaPenNib, FaAppleAlt } from "react-icons/fa";
-// import { DiIllustrator } from "react-icons/di";
+import { DiIllustrator } from "react-icons/di";
 
 const LearningResources = () => {
-  <section
-    id="learning-resources"
-    className="learning-resources"
-    style={{ backgroundColor: "yellow", width: "100%", height: 670 }}
-  ></section>;
   const resources = [
     {
       icon: <FaChalkboardTeacher />,
@@ -79,28 +74,33 @@ const LearningResources = () => {
   ];
 
   return (
-    <div className="learning-container">
-      <h1 className="title">Tư liệu học tập</h1>
-      <div className="cards-wrapper">
-        {resources.map((item, index) => (
-          <ResourceCard key={index} {...item} />
-        ))}
+    <section id="learning-resources" className="learning-resources">
+      <div
+        className="learning-container"
+        style={{ backgroundColor: "yellow", width: "100%" }}
+      >
+        <h1 className="title">Tư liệu học tập</h1>
+        <div className="cards-wrapper">
+          {resources.map((item, index) => (
+            <ResourceCard key={index} {...item} />
+          ))}
+        </div>
+        <div className="footer-button">
+          <button>
+            <FaAppleAlt />
+            Procreate
+          </button>
+          <button>
+            <DiIllustrator />
+            Illustrator
+          </button>
+          <button>
+            <FaPenNib />
+            Calligraphr
+          </button>
+        </div>
       </div>
-      <div className="footer-button">
-        <button>
-          {/* <FaAppleAlt /> */}
-          Procreate
-        </button>
-        <button>
-          {/* <DiIllustrator /> */}
-          Illustrator
-        </button>
-        <button>
-          {/* <FaPenNib /> */}
-          Calligraphr
-        </button>
-      </div>
-    </div>
+    </section>
   );
 };
 
