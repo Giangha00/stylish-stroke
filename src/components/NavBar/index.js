@@ -58,7 +58,7 @@ const Navbar = () => {
       </div>
       <ul className={`navbar__links ${isOpen ? "active" : ""}`}>
         <li>
-          <a href="#calligraphy" onClick={handleDropdown}>
+          <a href="#about-calligraphy" onClick={handleDropdown}>
             About Calligraphy
           </a>
         </li>
