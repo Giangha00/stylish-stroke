@@ -110,7 +110,7 @@
   font-weight: 500;
   border: none;
   gap: 5px;
-  mix-blend-mode: multiply;
+  padding: 5px 10px;
 }
 
 .contact__message-icon {
