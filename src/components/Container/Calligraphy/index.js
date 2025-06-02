@@ -1,4 +1,3 @@
-// Import cần thiết
 import React, { useState, useRef, useEffect } from "react";
 import "./calligraphy.css";
 
@@ -69,13 +68,10 @@ export default function Calligraphy() {
       }
     };
 
-    // Scroll when component mounts if hash exists
     scrollToSection();
 
-    // Add listener for hash changes
     window.addEventListener("hashchange", scrollToSection);
 
-    // Cleanup
     return () => window.removeEventListener("hashchange", scrollToSection);
   }, []);
 
@@ -94,13 +90,11 @@ export default function Calligraphy() {
       >
         <h2 className="section-title">About Calligraphy</h2>
         <div className="calligraphy-content">
-          {/* Nội dung bên trái */}
           <div className="calligraphy-text">
             <h3 className="highlight">Origins & History</h3>
             <p>{calligraphyData[selectedIndex]?.description}</p>
           </div>
 
-          {/* Danh sách ô bên phải */}
           <div className="calligraphy-boxes" role="list">
             {calligraphyData.map((item, index) => (
               <div
