@@ -1,5 +1,5 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom"; 
+import { Routes, Route } from "react-router-dom";
 import Container from "./components/Container";
 import Gallery1 from "./components/pages/gallery1/gallery1";
 import Gallery2 from "./components/pages/gallery2/gallery2";
@@ -11,11 +11,6 @@ import Gallery6 from "./components/pages/gallery6/gallery6";
 function App() {
   return (
     <div className="App">
-     
-      <Container />
-
-      
-      
       <Routes>
         <Route path="/" element={<Container />} />
         <Route path="/gallery" element={<Container />} />
