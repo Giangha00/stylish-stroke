@@ -1,0 +1,119 @@
+.calligraphy-section {
+  padding: 60px 20px;
+  background-color: #fefaf6;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #823b15;
+  margin-bottom: 40px;
+}
+
+.calligraphy-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.calligraphy-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.calligraphy-text h3 {
+  color: #a34300;
+  margin-bottom: 10px;
+}
+
+.calligraphy-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #5c4328;
+  white-space: pre-line;
+}
+
+.calligraphy-boxes {
+  flex: 1;
+  max-height: 320px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 280px;
+}
+
+.calligraphy-box {
+  padding: 16px;
+  background-color: #fff3dc;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.2s ease;
+}
+
+.calligraphy-box h4 {
+  color: #92400e;
+}
+
+.calligraphy-box:hover {
+  border-color: #e5a24c;
+}
+
+.calligraphy-box.active {
+  border-color: #a34300;
+  background-color: #ffeac2;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .calligraphy-section {
+    padding: 40px 16px;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    margin-bottom: 30px;
+  }
+
+  .calligraphy-content {
+    gap: 24px;
+  }
+
+  .calligraphy-text {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .calligraphy-boxes {
+    min-width: 100%;
+    max-height: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .calligraphy-section {
+    padding: 32px 12px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+  }
+
+  .calligraphy-box {
+    padding: 12px;
+  }
+
+  .calligraphy-text h3 {
+    font-size: 1.25rem;
+  }
+
+  .calligraphy-text p {
+    font-size: 0.95rem;
+  }
+}
